@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <button (click)="start()">start</button>
+  <button (click)="stop()">stop</button>
+  <h2>
+    <span>Current Count: {{counter}} </span>
+    <span *ngIf="isStoped && counter">[stopped]</span>
+  </h2>
+</div>
